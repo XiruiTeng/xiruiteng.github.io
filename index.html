@@ -52,10 +52,7 @@
       </div>
 
       <aside class="profile-panel" aria-label="Profile photo and affiliation">
-        <button class="profile-toggle" type="button" aria-label="Show real photo" aria-pressed="false" data-profile-toggle>
-          <img class="profile-photo profile-photo--pixel" src="images/profile-pixel.svg" alt="Pixel art portrait of Xirui Teng">
-          <img class="profile-photo profile-photo--real" src="images/profile-real.jpg" alt="Real photo of Xirui Teng">
-        </button>
+        <img class="profile-photo" src="images/profile-real.jpg" alt="Xirui Teng">
         <div class="profile-caption">
           <strong>Incoming Ph.D. Student</strong>
           <span>University of Illinois Chicago</span>
@@ -101,21 +98,5 @@
       </p>
     </footer>
   </main>
-
-  <script>
-    const profileToggle = document.querySelector("[data-profile-toggle]");
-
-    if (profileToggle) {
-      profileToggle.addEventListener("click", () => {
-        const showingRealPhoto = profileToggle.classList.toggle("is-real");
-
-        profileToggle.setAttribute("aria-pressed", String(showingRealPhoto));
-        profileToggle.setAttribute(
-          "aria-label",
-          showingRealPhoto ? "Show pixel art portrait" : "Show real photo"
-        );
-      });
-    }
-  </script>
 </body>
 </html>

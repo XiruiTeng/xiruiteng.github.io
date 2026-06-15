@@ -112,7 +112,7 @@ strong {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
+  grid-template-columns: minmax(0, 1fr) 260px;
   align-items: end;
   gap: 72px;
   padding: 0 0 70px;
@@ -185,50 +185,13 @@ p {
   box-shadow: 0 24px 70px var(--shadow);
 }
 
-.profile-toggle {
-  position: relative;
+.profile-photo {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 5;
-  overflow: hidden;
-  padding: 0;
-  border: 0;
   border-radius: 22px;
-  background: var(--line);
-  cursor: pointer;
-}
-
-.profile-toggle:focus-visible {
-  outline: 3px solid rgba(198, 95, 63, 0.45);
-  outline-offset: 4px;
-}
-
-.profile-photo {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  transition: opacity 180ms ease;
-}
-
-.profile-photo--pixel {
-  image-rendering: pixelated;
-  opacity: 1;
-}
-
-.profile-photo--real {
-  object-position: 50% 56%;
-  opacity: 0;
-}
-
-.profile-toggle.is-real .profile-photo--pixel {
-  opacity: 0;
-}
-
-.profile-toggle.is-real .profile-photo--real {
-  opacity: 1;
+  object-position: 58% 62%;
 }
 
 .profile-caption {
@@ -323,7 +286,7 @@ p {
   }
 
   .profile-panel {
-    width: min(100%, 360px);
+    width: min(100%, 260px);
   }
 
   h1 {
