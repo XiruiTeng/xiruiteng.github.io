@@ -214,7 +214,7 @@ p {
 }
 
 .profile-photo--pixel {
-  image-rendering: auto;
+  image-rendering: pixelated;
   opacity: 1;
 }
 
