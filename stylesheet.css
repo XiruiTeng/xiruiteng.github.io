@@ -112,7 +112,7 @@ strong {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 260px;
+  grid-template-columns: minmax(0, 1fr) 244px;
   align-items: end;
   gap: 72px;
   padding: 0 0 70px;
@@ -286,7 +286,7 @@ p {
   }
 
   .profile-panel {
-    width: min(100%, 260px);
+    width: min(100%, 244px);
   }
 
   h1 {
