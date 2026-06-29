@@ -88,7 +88,8 @@ strong {
 }
 
 .nav-links a,
-.link-row a {
+.link-row a,
+.publication-links a {
   display: inline-flex;
   align-items: center;
   min-height: 38px;
@@ -105,7 +106,9 @@ strong {
 .nav-links a:hover,
 .nav-links a:focus-visible,
 .link-row a:hover,
-.link-row a:focus-visible {
+.link-row a:focus-visible,
+.publication-links a:hover,
+.publication-links a:focus-visible {
   border-color: rgba(198, 95, 63, 0.45);
   color: var(--accent-dark);
 }
@@ -246,15 +249,44 @@ p {
 }
 
 .news-item p,
-.research-panel p,
 .site-footer p {
   margin: 0;
 }
 
-.research-panel {
-  max-width: 720px;
+.publication-list {
+  display: grid;
+  gap: 18px;
+}
+
+.publication-item {
+  padding-top: 2px;
+}
+
+.publication-title {
+  margin: 0;
+  color: var(--ink);
+  font-family: Charter, "Iowan Old Style", Georgia, serif;
+  font-size: 1.34rem;
+  font-weight: 700;
+  line-height: 1.28;
+}
+
+.publication-authors,
+.publication-venue {
+  margin: 8px 0 0;
   color: #34312d;
-  font-size: 1.05rem;
+}
+
+.publication-venue {
+  color: var(--muted);
+  font-weight: 620;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
 }
 
 .site-footer {
@@ -318,7 +350,8 @@ p {
   }
 
   .nav-links a,
-  .link-row a {
+  .link-row a,
+  .publication-links a {
     min-height: 36px;
     padding: 7px 12px;
   }
